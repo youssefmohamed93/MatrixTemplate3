@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imgaes/My Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="section" id="section">
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <h1>Matrix</h1>
+            </div>
+            <div class="main-sidebar">
+                <ul class="first-ul">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html">
+                            <i class="fa-brands fa-product-hunt"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Reviews</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="active">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="navbar-container">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="Imgaes/My Logo.png">
+                        </div>
+                        <div class="search">
+                            <input type="search" placeholder="Fast Search">
+                        </div>
+                    </div>
+                    <div class="navbar">
+                        <div class="theme">
+                            <input type="checkbox" id="darkmode">
+                            <label for="darkmode" id="darkmode"></label>
+                        </div>
+                        <div class="notifications">
+                            <i class="fa-solid fa-bell fa-"></i>
+                        </div>
+                        <div class="profile-image">
+                            <img src="Imgaes/me.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-title">
+                <h2>Settings</h2>
+            </div>
+            <div class="settings-page">
+                <div class="settings-box">
+                    <h2>Website Control</h2>
+                    <p>Control The Website If There Is Maintenance</p>
+                    <div class="main-text">
+                        <div>
+                            <span>Website Control</span>
+                            <p>Open/Close Website And Type The Reason</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked="">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea class="close-message" placeholder="Close Message Content"></textarea>
+                </div>
+                <div class="general-box">
+                    <h2>Edit General Info</h2>
+                    <p>General Information About Your Account</p>
+                    <div class="general-label">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name">
+                        <div class="ee">
+                            <label for="email">Email</label>
+                            <input type="text" id="Email" placeholder="Email">
+                            <a href="#" class="save-btn">Save</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="security">
+                    <h2>Security Info</h2>
+                    <p>Security Information About Your Account</p>
+                    <div class="security-box">
+                        <div>
+                            <span>Password</span>
+                            <p>Changed On 31/1/2024</p>
+                        </div>
+                        <div>
+                            <a href="#" class="change-btn">Change</a>
+                        </div>
+                    </div>
+                    <div class="security-box">
+                        <div>
+                            <span>Two-Factor Authentication</span>
+                            <p>Enable / Disable The Feature</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch" id="ttwo" ></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="security-box">
+                        <div>
+                            <span>Devices</span>
+                            <p>Check The Login Devices List</p>
+                        </div>
+                        <div>
+                            <a href="#" class="change-btn">Devices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="scrolltotop" title="Scroll to top"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="main.js"></script>
+</body>
+</html>
